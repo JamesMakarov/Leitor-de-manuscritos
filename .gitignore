@@ -1,1 +1,24 @@
+# Environment
 .env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime input/output
+paginas/*
+!paginas/.gitkeep
+textos_extraidos/*
+!textos_extraidos/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
