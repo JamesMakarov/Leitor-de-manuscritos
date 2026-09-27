@@ -59,11 +59,14 @@ class AplicacaoOCR(ctk.CTk):
 			
 			time.sleep(5)
 			
-		self.botao_upload.configure(state="normal")
 		self.inserir_texto_interface("\n--- Lote Finalizado ---\n")
 		self.caminhos_temporarios.clear()
+		self.after(0, lambda: self.botao_upload.configure(state="normal"))
 
 	def inserir_texto_interface(self, texto):
+		self.after(0, self._inserir_texto_interface, texto)
+
+	def _inserir_texto_interface(self, texto):
 		self.caixa_texto.insert("end", texto)
 		self.caixa_texto.see("end")
 
