@@ -1,5 +1,7 @@
 # Handwriting Transcriber
 
+[![Python tests](https://github.com/JamesMakarov/Leitor-de-manuscritos/actions/workflows/ci.yml/badge.svg)](https://github.com/JamesMakarov/Leitor-de-manuscritos/actions/workflows/ci.yml)
+
 Aplicação desktop em **Python + CustomTkinter** para transcrever texto manuscrito a partir de imagens usando a API do **Gemini**.
 
 O usuário seleciona uma ou mais imagens, o aplicativo envia cada arquivo para o modelo, exibe a transcrição na interface e permite copiar o texto resultante.
