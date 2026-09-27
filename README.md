@@ -31,8 +31,9 @@ O usuário seleciona uma ou mais imagens, o aplicativo envia cada arquivo para o
 │   ├── main.py
 │   ├── gemini_client.py
 │   └── file_manager.py
-├── paginas/
-├── textos_extraidos/
+├── examples/
+│   ├── input.png
+│   └── output.txt
 ├── requirements.txt
 └── .env.example
 ```
@@ -81,6 +82,10 @@ GEMINI_API_KEY=your-api-key
 ```bash
 python src/main.py
 ```
+
+## Exemplo
+
+A pasta `examples/` contém uma imagem de entrada e a transcrição correspondente, separadas dos arquivos temporários usados durante a execução.
 
 ## Como funciona
 
